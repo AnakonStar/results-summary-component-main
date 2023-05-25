@@ -26,7 +26,7 @@ h1, h2, span {
     color: hsl(228, 45%, 44%);
 }
 .attribution {
-    bottom: -10px;
+    bottom: 0px;
     position: absolute;
 }
 h1, h2, h3 {

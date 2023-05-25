@@ -1,0 +1,201 @@
+body {
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+}
+main {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+h1, h2, span {
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+.attribution { 
+    text-align: center; 
+    font-size: 11px; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+}
+.attribution {
+    bottom: -10px;
+    position: absolute;
+}
+h1, h2, h3 {
+    font-size: 19px;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+.results {
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    text-align: center;
+    display: flex;
+    width: 100%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.results .number {
+    font-size: 50px;
+    margin: 0;
+}
+.results .number-container {
+    border-radius: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    height: 170px;
+    width: 170px;
+}
+.results h1, h2 {
+    color: hsl(0, 0%, 100%)
+}
+.results h3 {
+    color: hsl(221, 100%, 96%);
+    font-weight: 500;
+}
+.summary {
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+}
+.summary h2 {
+    padding-left: 10px;
+    font-size: 15px;
+    color: black;
+    font-weight: 700
+}
+.summary h2 span {
+    padding-left: 10px;
+    color: gray;
+    font-weight: 500
+}
+.summary .reaction {
+    color: hsl(0, 100%, 67%);
+}
+.summary .memory {
+    color: hsl(39, 100%, 56%);
+}
+.summary .verbal {
+    color: hsl(166, 100%, 37%);
+}
+.summary .visual {
+    color: hsl(234, 85%, 45%);
+}   
+.summary .items {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.summary article {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.summary section {
+    flex-direction: row;
+    display: flex;
+    padding: 0px;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 5px;
+    padding: 3px;
+    border-radius: 10px;
+}
+.summary section div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+}
+.summary .reactionbg {
+    background-color: rgba(255, 87, 87, 0.100);
+}
+.summary .memorybg {
+    background-color: hsla(39, 100%, 56%, 0.100);
+}
+.summary .verbalbg {
+    background-color: hsla(166, 100%, 37%, 0.100);
+}
+.summary .visualbg {
+    background-color: hsla(234, 85%, 45%, 0.100);
+} 
+.items {
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+    width: 100%;
+    border-radius: 10px;
+    padding-inline: 10px;
+}
+button {
+    width: 100%;
+    height: 50px;
+    border-radius: 30px;
+    margin-top: 10px;
+    background-color: hsl(224, 30%, 27%);
+    cursor: pointer;
+    font-family: 'Outfit', sans-serif;
+    font-size: 20pt;
+    color: white;
+    border: 0;
+}
+button:hover {
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+section {
+    width: 50%;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    padding: 25px;
+}
+
+@media screen and (min-width: 376px){
+    body {
+        justify-content: center;
+    }
+    main {
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .results {
+        width: 20%;
+        border-radius: 30px;
+    }
+    h1, h2, h3 {
+        font-size: 19px;
+    }
+    .summary {
+        display: flex;
+        width: auto;
+        width: 20%;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .items {
+        margin: 5px;
+    }
+    .summary section {
+        margin: 7px;
+    }
+    .summary section div {
+        margin-inline: 5px;
+    }
+    .attribution {
+        bottom: 10px;
+        position: absolute;
+    }
+}

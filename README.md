@@ -30,48 +30,55 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ### Built with
 
-- SASS for better style overview
 - Basic HTML tags
+- Semantic HTML
+- @media-screen for all types of view
 - Basic CSS
 
 ### What I learned
 
-The most valueble element that I used in this project was Reponsive Pages, that basically let you choose a different style to the page, based on the viewport, be it Mobile or Desktop.
+I think it might be best practices about Semantic HTML, basically it organizes HTML tags better, not just stuffing them with classes.
 
-Like the example bellow:
+Do this:
 
-Mobile
+```html
+<section class="memorybg">
+  <div>
+    <object data="./assets/images/icon-memory.svg" width="20px" height="20px"></object>
+    <h2 class="memory">
+      Memory
+    </h2>
+  </div>
+  <div>
+    <h2>92 <span>/ 100</span></h2>
+  </div>
+</section>
 
-```css
-.qr-container { 
-  width: 85%;
-  padding: 18px; 
-  display: flex; 
-  border-radius: 5%; 
-  background-color: hsl(0, 0%, 100%); 
-  flex-direction: column; 
-  align-items: center; 
-}
+Instead of this:
 
-Desktop
-
-@media screen and (min-width: 375px) {
-  .qr-container {
-      width: 16%;
-  }
-}
+<div class="memorybg">
+  <div class="section">
+    <object data="./assets/images/icon-memory.svg" width="20px" height="20px"></object>
+    <h2 class="memory">
+      Memory
+    </h2>
+  </div>
+  <div class="values">
+    <h2>92 <p>/ 100</p></h2>
+  </div>
+</div>
 ```
 
-This will very helpful in the next time!
+I know it seems like this doesn't make a difference, but with a large amount of code, this can be very useful.
+(NOTE: You must be thinking why I put a class in a section, it's because, if you look at my code, you'll see that there are 4 types of summary option, and each one has its own color. And just for explanation , I used div inside section, because section has its unique style and div, it's just cleaner in css code)
 
 ### Continued development
 
-Maybe, learn more about other ways to do a website, like using React.js, Python, PHP, that I alredy used, but don't go much futher. Other thing will be about Clean Code, I want to study about, and implement in my future projects
+I just started from the last project uploaded, learning about ReactJS, and it's kind of similar to React-Native (I've been using React-Native for 2 years now to produce applications based on the Android operating system), same base and uses, but with HTML tags and CSS for style sheet. So I think I can go even further and make many lighter and better sites.
 
 ### Useful resources
 
-- [Example resource 1](https://www.youtube.com/watch?v=gRIWFYRaVto) - This video from Hostinger Brasil (yes, I'm brazilian) help me to, like a said in What I learned, to understand more about reponsive pages and how to implement them.
-- [Example resource 1](https://elementor.com/help/whats-the-difference-between-px-em-rem-vw-and-vh/#:~:text=VH%20is%20useful%20for%20creating,to%20viewport's%20width%20or%20height.) - This article, teach me about some differences about measurement units in CSS.
+- [Example resource 1](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Document_and_website_structure) - This blog just taught me the correct way to use semantic HTML to structure websites better
 
 ## Author
 
